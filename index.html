@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/main.css">
     <title>LaslesVPN Landing Page</title>
 </head>
@@ -11,7 +12,7 @@
         <div class="container">
             <div class="header__inner">
                 <a href="/" class="logo">
-                    <img src="./icons/logo.svg" alt="LaslesVPN Logo" class="logo__img" width="35" height="36">
+                    <img src="./icons/logo.svg" alt="LaslesVPN Logo" class="logo__img" width="35" height="36" loading="lazy">
                     <div class="logo__name">Lasles<b>VPN</b></div>
                 </a>
                 <nav class="header__nav">
@@ -34,11 +35,25 @@
                     </ul>
                 </nav>
                 <div class="header__actions">
-                    <button class="btn">Sign In</button>
-                    <button class="btn btn--secondary">Sign Up</button>
+                    <button type="button" class="btn">Sign In</button>
+                    <button type="button" class="btn btn--primary-v1">Sign Up</button>
                 </div>
             </div>
         </div>
     </header>
+    <main class="content">
+        <section class="about">
+            <div class="about__inner">
+                <div class="about__content">
+                    <h1 class="about__title">Want anything to be easy with <b>LaslesVPN.</b></h1>
+                    <p class="about__desc">Provide a network for all your needs with ease and fun using <span class="fw-500">LaslesVPN</span> discover interesting features from us.</p>
+                    <button type="button" class="btn btn--secondary">Get Started</button>
+                </div>
+                <div class="about__media">
+                    <img src="./illustrations/about-illustration.svg" alt="" class="about__illustration" width="611" height="382" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
