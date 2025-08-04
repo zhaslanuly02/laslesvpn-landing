@@ -1,0 +1,22 @@
+:root {
+    --color-primary: #4F5665;
+    --color-accent: #F53855;
+    --color-dark: #0B132A;
+    --color-light: #FFF;
+    --color-gray: #EEEFF2;
+    --color-shadow-red: rgba(245 56 56 / 0.35);
+    --color-shadow-dark: rgba(13 16 37 / 0.1);
+
+    --shadow-main: 0 20px 57px 4px var(--color-shadow-red);
+    --shadow-secondary: 0 20px 64px var(--color-shadow-dark);
+
+    --border-radius-base: 10px;
+    --border-radius-x5: 50px;
+
+    --font-family: 'Rubik', sans-serif;
+
+    --container-width: 1140px;
+    --container-padding-x: 10px;
+
+    --transition-duration: 0.2s;
+}

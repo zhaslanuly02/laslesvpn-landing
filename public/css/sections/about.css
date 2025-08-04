@@ -1,0 +1,24 @@
+.about {
+    display: flex;
+    align-items: end;
+    
+    max-width: calc(1210px + var(--container-padding-x) * 2);
+    padding-inline: 40px var(--container-padding-x);
+    padding-block: 88px 102px;
+    margin-inline: auto;
+}
+
+.about__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.about__desc {
+    margin-bottom: 50px;
+}
+
+.about__media {
+    flex-shrink: 0;
+}

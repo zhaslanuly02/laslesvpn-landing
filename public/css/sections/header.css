@@ -1,0 +1,33 @@
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 46px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo__name {
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header__link:hover,
+.btn:hover {
+    color: var(--color-accent);
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
