@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Rubik';
-    src: url('../fonts/Rubik-Regular.woff2') format('woff2');
+    src: url('../../static/fonts/Rubik-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Rubik';
-    src: url('../fonts/Rubik-Medium.woff2') format('woff2');
+    src: url('../../static/fonts/Rubik-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Rubik';
-    src: url('../fonts/Rubik-Bold.woff2') format('woff2');
+    src: url('../../static/fonts/Rubik-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -234,8 +234,15 @@ svg * {
     --color-accent: #F53855;
     --color-dark: #0B132A;
     --color-light: #FFF;
+    --color-gray: #EEEFF2;
+    --color-shadow-red: rgba(245 56 56 / 0.35);
+    --color-shadow-dark: rgba(13 16 37 / 0.1);
 
-    --shadow-main: 0 20px 57px 10px rgba(245 56 56 / 0.35);
+    --shadow-main: 0 20px 57px 4px var(--color-shadow-red);
+    --shadow-secondary: 0 20px 64px var(--color-shadow-dark);
+
+    --border-radius-base: 10px;
+    --border-radius-x5: 50px;
 
     --font-family: 'Rubik', sans-serif;
 
@@ -327,7 +334,7 @@ a, button {
     color: var(--color-accent);
     background-color: var(--color-light);
     border: 1px solid var(--color-accent);
-    border-radius: 50px;
+    border-radius: var(--border-radius-x5);
 }
 
 .btn--primary-v1:hover {
@@ -348,7 +355,7 @@ a, button {
     transform: translateX(-50%);
     z-index: -1;
 
-    border-radius: 50px;
+    border-radius: var(--border-radius-x5);
     box-shadow: var(--shadow-main);
 
     opacity: 0;
@@ -359,13 +366,13 @@ a, button {
     opacity: 1;
 }
 
-.about__inner {
+.about {
     display: flex;
     align-items: end;
     
     max-width: calc(1210px + var(--container-padding-x) * 2);
     padding-inline: 40px var(--container-padding-x);
-    padding-top: 88px;
+    padding-block: 88px 102px;
     margin-inline: auto;
 }
 
@@ -389,14 +396,14 @@ a, button {
     color: var(--color-light);
     background-color: var(--color-accent);
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: var(--border-radius-base);
 }
 
 .btn--secondary:hover {
     color: var(--color-accent);
     background-color: var(--color-light);
     border: 1px solid var(--color-accent);
-    border-radius: 10px;
+    border-radius: var(--border-radius-base);
 }
 
 .btn--secondary::after {
@@ -412,7 +419,7 @@ a, button {
     transform: translateX(-50%);
     z-index: -1;
 
-    border-radius: 50px;
+    border-radius: var(--border-radius-x5);
     box-shadow: var(--shadow-main);
 
     opacity: 1;
@@ -425,4 +432,54 @@ a, button {
 
 .about__media {
     flex-shrink: 0;
+}
+
+.statistics {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: var(--border-radius-base);
+  box-shadow: var(--shadow-secondary);
+}
+
+.statistics__list {
+  display: flex;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+.statistics__item {
+  position: relative;
+  display: flex;
+  column-gap: 36px;
+  align-items: center;
+  margin: 68px 100px;
+}
+
+.statistics__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -100px;
+  height: 126px;
+  width: 1px;
+  background-color: var(--color-gray);
+}
+
+.statistics__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  row-gap: 5px;
+}
+
+.statistics__content-title {
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--color-dark);
+}
+
+.statistics__content-desc {
+  font-size: 20px;
+  line-height: 1.5;
 }
