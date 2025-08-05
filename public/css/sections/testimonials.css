@@ -15,3 +15,14 @@
     margin-bottom: 156px;
     width: 555px;
 }
+
+/* Sponsored */
+.sponsored {
+    margin-bottom: 120px;
+}
+
+.sponsored__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
