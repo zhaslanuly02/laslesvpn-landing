@@ -31,5 +31,5 @@
   content: '';
   width: 20px;
   height: 20px;
-  background: url('/static/icons/check.svg') center/contain no-repeat;
+  background: url('/static/icons/check-fill.svg') center/contain no-repeat;
 }

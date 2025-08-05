@@ -9,5 +9,6 @@
 @import url('./sections/about.css');
 @import url('./sections/statistics.css');
 @import url('./sections/features.css');
+@import url('./sections/pricing.css');
 
 @import url('./components.css');

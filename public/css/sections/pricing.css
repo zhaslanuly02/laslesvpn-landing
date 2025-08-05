@@ -1,0 +1,81 @@
+.pricing__inner {
+    text-align: center;
+}
+
+.pricing__title {
+    margin-bottom: 20px;
+}
+
+.pricing__desc {
+    margin-bottom: 60px;
+}
+
+.pricing__plans {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__plan {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    height: 760px;
+    padding: 80px 70px 50px;
+    border: 2px solid var(--color-gray);
+    border-radius: var(--border-radius-base);
+
+    transition-duration: var(--transition-duration);
+}
+
+.pricing__plan:hover {
+    border: 2px solid var(--color-accent);
+}
+
+.pricing__plan-top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.pricing__plan-img {
+    margin-inline: auto;
+}
+
+.pricing__plan-title {
+    font-size: 18px;
+}
+
+.pricing__plan-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+}
+
+.pricing__plan-item {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.pricing__plan-item::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url('/static/icons/check.svg') center/contain no-repeat;
+}
+
+.pricing__plan-bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.pricing__plan-price {
+    font-size: 25px;
+    line-height: 1.2;
+}

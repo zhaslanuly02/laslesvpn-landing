@@ -27,7 +27,7 @@
   right: -100px;
   height: 126px;
   width: 1px;
-  background-color: var(--color-gray);
+  background-color: var(--color-light-gray);
 }
 
 .statistics__content {
